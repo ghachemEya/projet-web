@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Session } from './session';
 import { SESSIONITEMS } from './sessions';
 
 @Injectable({
@@ -8,12 +9,12 @@ export class FakesessionitemService {
 
   constructor() { }
   get() {return SESSIONITEMS;}
-  add(sessionItem) {
+  add(sessionItem: Session) {
     sessionItem.id = SESSIONITEMS.length + 1;
     SESSIONITEMS.push(sessionItem);
     }
 
-    delete(sessionItem) {
+    delete(sessionItem: Session) {
       let index;
       index = SESSIONITEMS.indexOf(sessionItem);
       if (SESSIONITEMS.indexOf(sessionItem) >= 0) {

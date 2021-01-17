@@ -9,7 +9,7 @@ import { Session } from '../session';
   styleUrls: ['./session-edit-form.component.css']
 })
 export class SessionEditFormComponent implements OnInit {
-  id;
+  id: number = 0;
   private sub: any;
   session:any;
   tracks = ['MEAN', 'Angular',
@@ -22,7 +22,7 @@ export class SessionEditFormComponent implements OnInit {
   console.log('Session ID ' + this.id.toString());
   this.session = this.sessionItemService.getSession(this.id);
   }
-  editSession(sessionItem) {
+  editSession(sessionItem: Session) {
   console.log(sessionItem);
   }
 

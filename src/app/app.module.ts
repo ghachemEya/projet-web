@@ -7,6 +7,8 @@ import { SessionItemListComponent } from './session-item-list/session-item-list.
 import { InscriptionDisabledDirective } from './inscription-disabled.directive';
 import { RouterModule, Routes } from '@angular/router';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
 const appRoutes: Routes = [
   {
   path: 'list',
@@ -24,7 +26,9 @@ const appRoutes: Routes = [
     SessionItemComponent,
     SessionItemListComponent,
     InscriptionDisabledDirective,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    DashboardComponent,
+   
   ],
   imports: [RouterModule.forRoot(
     appRoutes,

@@ -19,7 +19,7 @@ export class AppComponent {
     local: 'Tunis',
     participants: 0
   }
-  nbrParticipantsChange (event)
+  nbrParticipantsChange (event: { value: number; })
   {
    this.nbpart = event.value;
   }
