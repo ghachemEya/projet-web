@@ -10,12 +10,14 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ParticipantsComponent } from './participants/participants.component';
 import { FormateurComponent } from './formateurs/formateurs/formateur.component';
 import { AddFormateurComponent } from './formateurs/add-formateur/add-formateur.component';
 import { EditFormateurComponent } from './formateurs/edit-formateur/edit-formateur.component';
+import { CardComponent } from './card/card.component';
+import { FormateurTableComponent } from './formateur-table/formateur-table.component';
 
 
 
@@ -55,6 +57,8 @@ const appRoutes: Routes = [
     FormateurComponent,
     AddFormateurComponent,
     EditFormateurComponent,
+    CardComponent,
+    FormateurTableComponent,
 
     
    
@@ -73,7 +77,10 @@ const appRoutes: Routes = [
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

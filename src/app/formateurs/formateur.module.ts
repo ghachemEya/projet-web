@@ -9,7 +9,9 @@ const FormateurRoutes: Routes = [
   {
   path: '',
   component: FormateurComponent,
-  children: [{ path: 'addformateur', component: AddFormateurComponent }]
+  children: [{ path: 'addformateur', component: AddFormateurComponent },
+  { path: '', redirectTo: 'addformateur', pathMatch: 'full' }
+  ]
   }
   ];
 
