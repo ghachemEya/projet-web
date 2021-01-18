@@ -1,7 +1,20 @@
-<header>
-    <h1> Espace admin </h1>
-    <h2> Date et adresse </h2>
-  </header>
-  <section>
-    
-  </section>
+<div class="grid-container">
+  <h1 class="mat-h1">Dashboard</h1>
+  <mat-grid-list cols="2" rowHeight="350px" >
+    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            {{card.title}}
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>
+            <h1>5 sessions </h1>
+            <img src="assets/add.png" alt=" sessions ">
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

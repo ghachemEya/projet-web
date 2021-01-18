@@ -7,12 +7,34 @@ import { SessionItemListComponent } from './session-item-list/session-item-list.
 import { InscriptionDisabledDirective } from './inscription-disabled.directive';
 import { RouterModule, Routes } from '@angular/router';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavComponent } from './nav/nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule } from '@angular/material';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ParticipantsComponent } from './participants/participants.component';
+import { FormateurComponent } from './formateurs/formateurs/formateur.component';
+import { AddFormateurComponent } from './formateurs/add-formateur/add-formateur.component';
+import { EditFormateurComponent } from './formateurs/edit-formateur/edit-formateur.component';
+
+
 
 const appRoutes: Routes = [
   {
   path: 'list',
   component: SessionItemListComponent},
+  {
+    path: 'dashboard',
+    component: DashboardComponent
+  },
+  {
+    path: 'participants',
+    component: ParticipantsComponent
+  },
+  {
+    path: 'formateur',
+    component: FormateurComponent
+    },
   {
   path: 'admin',
   loadChildren: './admin/admin.module#AdminModule'
@@ -27,14 +49,31 @@ const appRoutes: Routes = [
     SessionItemListComponent,
     InscriptionDisabledDirective,
     PagenotfoundComponent,
+    NavComponent,
     DashboardComponent,
+    ParticipantsComponent,
+    FormateurComponent,
+    AddFormateurComponent,
+    EditFormateurComponent,
+
+    
    
   ],
   imports: [RouterModule.forRoot(
     appRoutes,
     { enableTracing: true }
     ),
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
