@@ -16,6 +16,7 @@ import { FormateurComponent } from './formateurs/formateurs/formateur.component'
 import { AddFormateurComponent } from './formateurs/add-formateur/add-formateur.component';
 import { EditFormateurComponent } from './formateurs/edit-formateur/edit-formateur.component';
 import {FormateurItemComponent} from "./formateurs/formateur-item/formateur-item.component";
+import { FormsModule, NgForm } from '@angular/forms';
 
 
 const appRoutes: Routes = [
@@ -29,7 +30,9 @@ const appRoutes: Routes = [
   {
     path: 'formateur',
     component: FormateurComponent
-    },
+  },
+  { path: 'formateur/addformateur', component: AddFormateurComponent },
+  { path: 'formateur/edit/:id', component: EditFormateurComponent },
   {
   path: 'admin',
   loadChildren: './admin/admin.module#AdminModule'
@@ -70,7 +73,8 @@ const appRoutes: Routes = [
     MatMenuModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

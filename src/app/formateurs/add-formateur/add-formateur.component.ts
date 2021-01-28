@@ -13,7 +13,7 @@ export class AddFormateurComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  addFormateur(formateur: Formateur) {
+  addformateur(formateur: Formateur) {
     console.log(formateur);
     this.formateurfakeservice.add(formateur);
     }

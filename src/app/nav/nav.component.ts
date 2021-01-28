@@ -14,7 +14,7 @@ export class NavComponent {
     .pipe(
       map(result => result.matches)
     );
-    
+    test = new Date();
   constructor(private breakpointObserver: BreakpointObserver) {}
   
   }

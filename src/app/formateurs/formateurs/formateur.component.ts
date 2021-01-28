@@ -16,5 +16,8 @@ export class FormateurComponent implements OnInit {
     this.formateurItems = this.formateurItemService.get();
     console.log(this.formateurItems);
   }
+  refresh(): void {
+    window.location.reload();
+  }
 
 }

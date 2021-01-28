@@ -22,5 +22,8 @@ export class fakeformateursService {
       FORMATEURSITEMS.splice(index, 1);
     }
   }
+  getFormateur(id: number){
+    return FORMATEURSITEMS[id - 1];
+  }
 }
 

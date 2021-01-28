@@ -6,7 +6,10 @@
       {{ formateur.email }}
     </td>
     <td>
-      <a [routerLink]="['../edit', formateur.id]" routerLinkActive="active">
+      <a
+        [routerLink]="['../formateur/edit', formateur.id]"
+        routerLinkActive="active"
+      >
         <img src="assets/edit.png" alt="modifier un formateur" />
       </a>
     </td>
