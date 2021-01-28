@@ -39,5 +39,5 @@ isCompleted : false
     adress: 'Tunis',
     participants: 0,
     isCompleted : false
-    }
+    },
 ];

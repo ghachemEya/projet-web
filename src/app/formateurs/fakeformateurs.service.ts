@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Formateurs } from './formateurs';
+import {Formateur} from "./formateur";
+import { FORMATEURSITEMS } from './formateurs';
 
 
 @Injectable({
@@ -8,14 +9,18 @@ import { Formateurs } from './formateurs';
 export class fakeformateursService {
 
   constructor() { }
-  get() {return Formateurs;}
-  add(sessionItem: Formateurs) {
-        console.log("sucess");
-    }
+  get() {return FORMATEURSITEMS;}
+  add(formateurItem: Formateur) {
+    formateurItem.id = FORMATEURSITEMS.length + 1;
+    FORMATEURSITEMS.push(formateurItem);    
+  }
 
-    delete(sessionItem: Formateurs) {
-        console.log("sucess");
-      
-      }
-      }
+  delete(formateurItem: Formateur) {
+    let index;
+    index = FORMATEURSITEMS.indexOf(formateurItem);
+    if (FORMATEURSITEMS.indexOf(formateurItem) >= 0) {
+      FORMATEURSITEMS.splice(index, 1);
+    }
+  }
+}
 

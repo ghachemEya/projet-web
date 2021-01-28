@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { fakeformateursService } from '../fakeformateurs.service';
-import { Formateurs } from '../formateurs';
+import { Formateur } from '../formateur';
 
 @Component({
   selector: 'app-add-formateur',
@@ -13,7 +13,7 @@ export class AddFormateurComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  addFormateur(formateur: Formateurs) {
+  addFormateur(formateur: Formateur) {
     console.log(formateur);
     this.formateurfakeservice.add(formateur);
     }

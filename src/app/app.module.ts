@@ -11,24 +11,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { ParticipantsComponent } from './participants/participants.component';
 import { FormateurComponent } from './formateurs/formateurs/formateur.component';
 import { AddFormateurComponent } from './formateurs/add-formateur/add-formateur.component';
 import { EditFormateurComponent } from './formateurs/edit-formateur/edit-formateur.component';
-import { CardComponent } from './card/card.component';
-import { FormateurTableComponent } from './formateur-table/formateur-table.component';
-
+import {FormateurItemComponent} from "./formateurs/formateur-item/formateur-item.component";
 
 
 const appRoutes: Routes = [
   {
   path: 'list',
   component: SessionItemListComponent},
-  {
-    path: 'dashboard',
-    component: DashboardComponent
-  },
   {
     path: 'participants',
     component: ParticipantsComponent
@@ -52,14 +45,11 @@ const appRoutes: Routes = [
     InscriptionDisabledDirective,
     PagenotfoundComponent,
     NavComponent,
-    DashboardComponent,
     ParticipantsComponent,
     FormateurComponent,
     AddFormateurComponent,
     EditFormateurComponent,
-    CardComponent,
-    FormateurTableComponent,
-
+    FormateurItemComponent
     
    
   ],

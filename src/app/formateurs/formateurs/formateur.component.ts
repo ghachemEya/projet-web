@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { fakeformateursService } from '../fakeformateurs.service';
+import { Formateur } from '../formateur';
 
 @Component({
   selector: 'app-formateur',
@@ -8,10 +9,12 @@ import { fakeformateursService } from '../fakeformateurs.service';
   providers : [fakeformateursService]
 })
 export class FormateurComponent implements OnInit {
-
-  constructor() { }
+  formateurItems: Formateur[] | undefined;
+  constructor(private formateurItemService: fakeformateursService) { }
 
   ngOnInit(): void {
+    this.formateurItems = this.formateurItemService.get();
+    console.log(this.formateurItems);
   }
 
 }

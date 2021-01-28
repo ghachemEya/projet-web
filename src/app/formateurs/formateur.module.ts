@@ -4,6 +4,7 @@ import { FormateurComponent } from './formateurs/formateur.component';
 import { AddFormateurComponent } from './add-formateur/add-formateur.component';
 import { RouterModule, Routes } from '@angular/router';
 import { EditFormateurComponent } from './edit-formateur/edit-formateur.component';
+import { FormateurItemComponent } from './formateur-item/formateur-item.component';
 
 const FormateurRoutes: Routes = [
   {
@@ -16,7 +17,7 @@ const FormateurRoutes: Routes = [
   ];
 
 @NgModule({
-  declarations: [FormateurComponent, AddFormateurComponent],
+  declarations: [FormateurComponent, AddFormateurComponent, FormateurItemComponent],
   imports: [RouterModule.forChild(FormateurRoutes),
     CommonModule,
  

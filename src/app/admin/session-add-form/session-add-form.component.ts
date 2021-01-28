@@ -13,8 +13,9 @@ export class SessionAddFormComponent implements OnInit {
 
   ngOnInit(): void {
   }
-addSession(sessionItem: Session) {
-console.log(sessionItem);
-this.sessionItemService.add(sessionItem);
-}
+  addSession(sessionItem: Session) {
+  console.log(sessionItem);
+  this.sessionItemService.add(sessionItem);
+  alert("Session ajoutée avec succés");
+  }
 }
