@@ -1,26 +1,24 @@
-
-  
-  table{
+table {
     background-color: #32435b;
-    border:4px solid #C1437A;
+    border: 4px solid #c1437a;
     width: 100%;
     text-align: center;
   }
-
-  table td{
+  
+  table td {
     position: relative;
     font-size: 15px;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    border:4px solid #C1437A;
+    border: 4px solid #c1437a;
   }
-
+  
   div {
     background-color: #32435b;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
     glyph-orientation-horizontal: middle;
-
   }
+  

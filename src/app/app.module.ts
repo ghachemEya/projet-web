@@ -11,12 +11,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
-import { ParticipantsComponent } from './participants/participants.component';
 import { FormateurComponent } from './formateurs/formateurs/formateur.component';
 import { AddFormateurComponent } from './formateurs/add-formateur/add-formateur.component';
 import { EditFormateurComponent } from './formateurs/edit-formateur/edit-formateur.component';
 import {FormateurItemComponent} from "./formateurs/formateur-item/formateur-item.component";
 import { FormsModule, NgForm } from '@angular/forms';
+import { ParticipantComponent } from './participants/participants/participant/participant.component';
+import { ParticipantItemComponent } from './participants/participant-item/participant-item.component';
+import { AddParticipantComponent } from './participants/add-participant/add-participant.component';
+import { EditParticipantComponent } from './participants/edit-participant/edit-participant.component';
+
 
 
 const appRoutes: Routes = [
@@ -24,13 +28,15 @@ const appRoutes: Routes = [
   path: 'list',
   component: SessionItemListComponent},
   {
-    path: 'participants',
-    component: ParticipantsComponent
-  },
-  {
     path: 'formateur',
     component: FormateurComponent
   },
+  {
+    path: 'participant',
+    component: ParticipantComponent
+  },
+  { path: 'participant/addparticipant', component: AddParticipantComponent },
+  { path: 'participant/edit/:id', component: EditParticipantComponent },
   { path: 'formateur/addformateur', component: AddFormateurComponent },
   { path: 'formateur/edit/:id', component: EditFormateurComponent },
   {
@@ -48,11 +54,15 @@ const appRoutes: Routes = [
     InscriptionDisabledDirective,
     PagenotfoundComponent,
     NavComponent,
-    ParticipantsComponent,
     FormateurComponent,
     AddFormateurComponent,
     EditFormateurComponent,
-    FormateurItemComponent
+    FormateurItemComponent,
+    ParticipantComponent,
+    ParticipantItemComponent,
+    AddParticipantComponent,
+    EditParticipantComponent,
+
     
    
   ],

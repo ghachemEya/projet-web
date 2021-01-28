@@ -1,0 +1,26 @@
+<div>
+    <table>
+      <tr>
+        <td>Liste des particpants</td>
+        <td>
+          <a (click)="refresh()">
+            <img src="assets/actualiser.png" class="icon" />
+          </a>
+        </td>
+        <td>
+          <a routerLink="./addparticipant" routerLinkActive="active">
+            <img src="assets/add.png" class="icon" />
+          </a>
+        </td>
+      </tr>
+  
+      <app-participant-item
+        *ngFor="let participantItem of participantItems"
+        [participant]="participantItem"
+        ><tr></tr>
+      </app-participant-item>
+    </table>
+  </div>
+  
+  <router-outlet></router-outlet>
+  
