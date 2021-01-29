@@ -21,6 +21,7 @@ import { ParticipantItemComponent } from './participants/participant-item/partic
 import { AddParticipantComponent } from './participants/add-participant/add-participant.component';
 import { EditParticipantComponent } from './participants/edit-participant/edit-participant.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { RechercheSessionComponent } from './recherche-session/recherche-session.component';
 
 
 
@@ -28,6 +29,9 @@ const appRoutes: Routes = [
   {
   path: 'list',
   component: SessionItemListComponent},
+  {
+    path: 'rechercher',
+    component: RechercheSessionComponent},
   {
     path: 'dashboard',
     component: DashboardComponent},
@@ -67,6 +71,7 @@ const appRoutes: Routes = [
     AddParticipantComponent,
     EditParticipantComponent,
     DashboardComponent,
+    RechercheSessionComponent,
 
     
    
