@@ -26,22 +26,38 @@
 </div>
 
 <div class="content-table">
-    <table>
+    <table class="formation">
         <tr>
             <td>Top Formateurs </td>
         </tr>
-        <app-formateur-item *ngFor="let formateurItem of formateurItems" [formateur]="formateurItem">
-            <tr></tr>
-        </app-formateur-item>
+        <tr>
+            {{formateurItems[1].name}} {{formateurItems[1].lastname}}
+        </tr>
+        <tr>
+            {{formateurItems[0].name}} {{formateurItems[0].lastname}}
+        </tr>
     </table>
 
-    <table>
+    <table class="formation">
         <tr>
             <td>Track</td>
             <td>Nombre de sessions</td>
         </tr>
         <tr>
-
+            <td> {{sessionItems[0].track}}</td>
+            <td>{{nbresession}}</td>
+        </tr>
+        <tr>
+            <td> {{sessionItems[1].track}}</td>
+            <td>{{nbresession}}</td>
+        </tr>
+        <tr>
+            <td> {{sessionItems[2].track}}</td>
+            <td>{{nbresession}}</td>
+        </tr>
+        <tr>
+            <td> {{sessionItems[3].track}}</td>
+            <td>{{nbresession}}</td>
         </tr>
     </table>
 </div>

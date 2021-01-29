@@ -1,8 +1,8 @@
 table {
-  background-color: #72b0ea;
+  background-color:white;
+
   width: 100%;
   text-align: center;
-  border: 1px solid #fafafa;
 }
 
 table td {
@@ -12,6 +12,8 @@ table td {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
   background-color: #2764ce;
+ 
+  
 }
 
 section {

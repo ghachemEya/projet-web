@@ -13,25 +13,84 @@ import { Participant } from '../participants/participant';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  sessionItems: Session[] | undefined;
-  participantItems : Participant[] | undefined;
-  formateurItems : Formateur[] | undefined;
+  sessionItems: any;
+  participantItems : any;
+  formateurItems : any;
   taille : any;
   tailleParticipants : any;
   tailleFormateurs : any;
   constructor(private formateurItemsService : fakeformateursService, private sessionItemService: FakesessionitemService, private participantItemService: fakeparticipantService) { }
-
+  Tranks : any ;
+  nbresession : number =0;
   ngOnInit(): void {
     
     this.sessionItems= this.sessionItemService.get();
     this.taille = this.sessionItems.length;
     console.log(this.sessionItems);
 
+    
+
+    for (let i = 0; i < this.taille; i++) {
+      this.nbresession = 0;
+      switch(this.sessionItems[i].track) { 
+      case "MEAN": { 
+        this.nbresession = this.nbresession+1;
+         break; 
+      } 
+      case "Ionic": { 
+        this.nbresession = this.nbresession+1;
+         break; 
+      } 
+      case "NodeJS": { 
+        this.nbresession = this.nbresession+1;
+         break; 
+      } 
+      case "Angular": { 
+        this.nbresession = this.nbresession+1;
+         break; 
+      } 
+      case "Swift": { 
+        this.nbresession = this.nbresession+1;
+         break; 
+      } 
+      case "Symphony": { 
+        this.nbresession = this.nbresession+1;
+         break; 
+      } 
+      case "Laravel": { 
+        this.nbresession = this.nbresession+1;
+         break; 
+      } 
+      case "Android": { 
+        this.nbresession = this.nbresession+1;
+         break; 
+      } 
+      case "Xamarin": { 
+        this.nbresession = this.nbresession+1;
+         break; 
+      }
+      default: { 
+         console.log("DATA NOT FOUND !!!");
+         break; 
+      } 
+   }
+
+    }
+
+
+  
+  
+
+
+
     this.participantItems = this.participantItemService.get();
     this.tailleParticipants = this.participantItems.length;
 
     this.formateurItems = this.formateurItemsService.get();
     this.tailleFormateurs = this.formateurItems.length;
+
+
+   
   }
 
  

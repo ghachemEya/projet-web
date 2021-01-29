@@ -39,22 +39,29 @@
      text-align: center;
  }
 
-  table {
-    background-color:white;
-    width: 50%;
-    text-align: center;
+
+
+  .content-table{
+      display: inline-flex;
+      margin-right: 20px ;
+      
   }
-  
-  table td {
+
+.formation td{
     position: relative;
     font-size: 15px;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
-    background-color: #2764ce;
-  }
+   
+}
 
-  .content-table{
-      display: inline-flex;
-      margin-right: 20px ;
-  }
+.formation tr{
+    position: relative;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    background-color: #5c749c;
+    
+}
