@@ -1,17 +1,13 @@
-<div>
+<section>
+  <a (click)="refresh()">
+    <img src="assets/actualiser.png" class="icon" />
+  </a>
+  <a routerLink="./addparticipant" routerLinkActive="active">
+    <img src="assets/add.png" class="icon" />
+  </a>
     <table>
       <tr>
         <td>Liste des particpants</td>
-        <td>
-          <a (click)="refresh()">
-            <img src="assets/actualiser.png" class="icon" />
-          </a>
-        </td>
-        <td>
-          <a routerLink="./addparticipant" routerLinkActive="active">
-            <img src="assets/add.png" class="icon" />
-          </a>
-        </td>
       </tr>
   
       <app-participant-item
@@ -20,7 +16,7 @@
         ><tr></tr>
       </app-participant-item>
     </table>
-  </div>
+  </section>
   
   <router-outlet></router-outlet>
   

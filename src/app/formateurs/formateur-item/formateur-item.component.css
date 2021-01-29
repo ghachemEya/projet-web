@@ -3,8 +3,9 @@
   font-size: 15px;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-  border: 4px solid #c1437a;
+  color: black;
+  background-color: #72b0ea;
+  border: 1px solid #fafafa;
   vertical-align: inherit;
   width: 100%;
 }

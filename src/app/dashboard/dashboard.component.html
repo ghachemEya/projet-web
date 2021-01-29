@@ -1,0 +1,47 @@
+<div class="content-dash">
+    <div class="rectangle">
+        <a>
+            <img src="assets/dashbord3.png" alt="nombre de session" class="icon">
+            {{taille}} sessions
+        </a>
+
+    </div>
+
+
+    <div class="rectangle2 ">
+        <a>
+            <img src="assets/dashbord2.png" alt="nombre des participant " class="icon">
+            {{tailleParticipants}} participants
+        </a>
+
+    </div>
+
+    <div class="rectangle3">
+        <a>
+            <img src="assets/dashbord2.png" alt="nombre des formateurs " class="icon">
+            {{tailleFormateurs}} Formateurs
+        </a>
+
+    </div>
+</div>
+
+<div class="content-table">
+    <table>
+        <tr>
+            <td>Top Formateurs </td>
+        </tr>
+        <app-formateur-item *ngFor="let formateurItem of formateurItems" [formateur]="formateurItem">
+            <tr></tr>
+        </app-formateur-item>
+    </table>
+
+    <table>
+        <tr>
+            <td>Track</td>
+            <td>Nombre de sessions</td>
+        </tr>
+        <tr>
+
+        </tr>
+    </table>
+</div>

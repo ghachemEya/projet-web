@@ -20,6 +20,7 @@ import { ParticipantComponent } from './participants/participants/participant/pa
 import { ParticipantItemComponent } from './participants/participant-item/participant-item.component';
 import { AddParticipantComponent } from './participants/add-participant/add-participant.component';
 import { EditParticipantComponent } from './participants/edit-participant/edit-participant.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 
@@ -27,6 +28,9 @@ const appRoutes: Routes = [
   {
   path: 'list',
   component: SessionItemListComponent},
+  {
+    path: 'dashboard',
+    component: DashboardComponent},
   {
     path: 'formateur',
     component: FormateurComponent
@@ -62,6 +66,7 @@ const appRoutes: Routes = [
     ParticipantItemComponent,
     AddParticipantComponent,
     EditParticipantComponent,
+    DashboardComponent,
 
     
    
