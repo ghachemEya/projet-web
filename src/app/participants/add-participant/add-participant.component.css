@@ -1,6 +1,7 @@
 :host {
     display: block;
     padding: 10px;
+    background-color: #29394b;
   }
   ul {
     list-style-type: none;

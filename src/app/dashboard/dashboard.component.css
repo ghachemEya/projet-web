@@ -1,27 +1,29 @@
 
-
 .rectangle{
-	width:400px;
+	width:300px;
 	height:200px;
     background : orangered;
     display: inline-block;
     margin :20px;
+    align-items: center;
 }
 
 .rectangle2{
-	width:400px;
+	width:300px;
 	height:200px;
     background : green;
     display: inline-block;
     margin : 20px;
+    align-items: center;
 }
 
 .rectangle3{
-	width:400px;
+	width:300px;
 	height:200px;
     background : violet;
     display: inline-block;
     margin : 20px;
+    align-items: center;
 }
 
 .icon{
