@@ -4,7 +4,7 @@
 	height:200px;
     background : orangered;
     display: inline-block;
-    margin :20px;
+    margin :80px;
     align-items: center;
 }
 
@@ -13,7 +13,7 @@
 	height:200px;
     background : green;
     display: inline-block;
-    margin : 20px;
+    margin : 50px;
     align-items: center;
 }
 
@@ -22,14 +22,14 @@
 	height:200px;
     background : violet;
     display: inline-block;
-    margin : 20px;
+    margin : 40px;
     align-items: center;
 }
 
 .icon{
     width: 100px;
     height: 100px;
-    margin: 10px;
+    margin: 30px;
   }
 
  a{
@@ -37,15 +37,28 @@
      font-size: 15px;
      font-weight: bold;
      text-align: center;
+     margin-top: 30px;
+
  }
 
 
 
-  .content-table{
+.content-table{
       display: inline-flex;
       margin-right: 20px ;
-      
+      justify-content:center;
+      align-items:center;
   }
+
+
+.formation{
+  width:100%;
+	justify-content:center;
+  align-items:center;
+
+
+}
+
 
 .formation td{
     position: relative;
@@ -62,7 +75,7 @@
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
-    background-color: #5c749c;
+    background-color: white;
     
 }
 
@@ -71,6 +84,7 @@
     min-height: 90vh;
     flex-direction: column;
     padding: 10px;
+    background-color: #29394b;
   }
   header {
     color: #ffffff;

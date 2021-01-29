@@ -3,18 +3,26 @@ export const FORMATEURSITEMS: Formateur[] = [
 {
     id: 1,
     name: 'Eya',
-    lastname: 'Ghalia',
-    adress: "dar eya",
-    domaine: "koujina",
-    email: 'ghalia@koujina.com'
+    lastname: 'Ghachem',
+    adress: "Aaouina - ariana ",
+    domaine: "Informatique",
+    email: 'ghachemeya@gmail.com'
 },
 {
-    id: 2,
-    name: 'Khalil',
-    lastname: 'Khoukha',
-    adress: "dar eya",
-    domaine: "informatique",
-    email: 'khoukha@informatique.fr'
+    id: 1,
+    name: 'Amira',
+    lastname: 'Ghachem',
+    adress: "Aaouina - ariana ",
+    domaine: "Informatique",
+    email: 'Amira@gmail.com'
+},
+{
+    id: 1,
+    name: 'Kawther',
+    lastname: 'Ghachem',
+    adress: "Aaouina - ariana ",
+    domaine: "Informatique",
+    email: 'Kawther@gmail.com'
 },
 
 ];

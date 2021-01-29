@@ -3,20 +3,29 @@ export const PARTICIPANTSITEMS: Participant[] = [
 {
     id: 1,
     name: 'Eya',
-    lastname: 'Ghalia',
-    adress: "dar eya",
-    societe: "koujina",
-    poste : "chef ",
-    email: 'ghalia@koujina.com'
+    lastname: 'Ghachem',
+    adress: "aaouina - ariana",
+    societe: "Informatique",
+    poste : "developper mobile ",
+    email: 'ghachem@informatique.com'
 },
 {
     id: 2,
     name: 'Khalil',
-    lastname: 'Khoukha',
-    adress: "dar eya",
+    lastname: 'Jendoubi',
+    adress: "ghazala",
     societe: "informatique",
-    poste : "dev ",
-    email: 'khoukha@informatique.fr'
+    poste : "developper",
+    email: 'Khalil@informatique.fr'
+},
+{
+    id: 3,
+    name: 'Farook',
+    lastname: 'Djaziri',
+    adress: "Monastir",
+    societe: "informatique",
+    poste : "developper",
+    email: 'Farook@informatique.fr'
 },
 
 ];
