@@ -19,7 +19,7 @@ export class RechercheSessionComponent implements OnInit {
     
   }
   getSession(id: number) {
-    this.session = this.sessions[1];
+    this.session = this.sessions[id -1];
     console.log(this.session);
   }
 

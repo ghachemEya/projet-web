@@ -1,18 +1,20 @@
-
 <header>
-    <h2>Rechercher une session </h2>
-  </header>
-  <form
-  #sessionItemForm="ngForm" (ngSubmit)="getSession(sessionItemForm.value)"
-  >
-    <ul>
-      <li>
-        <label for="id">ID du la session </label>
-        <input type="text" id="id" required name="id" ngModel />
-      </li>
-    </ul>
-    <button type="submit" [disabled]="!sessionItemForm.form.valid">Rechercher</button>
-  </form>
+  <h2>Rechercher une session</h2>
+</header>
+<form
+  #sessionItemForm="ngForm"
+  (ngSubmit)="getSession(sessionItemForm.value.id)"
+>
+  <ul>
+    <li>
+      <label for="id">ID du la session </label>
+      <input type="text" id="id" required name="id" ngModel />
+    </li>
+  </ul>
+  <button type="submit" [disabled]="!sessionItemForm.form.valid">
+    Rechercher
+  </button>
+</form>
 
 <h2>{{ session.name }}</h2>
 <div>{{ session.track }}</div>
@@ -26,8 +28,3 @@
 >
 <ng-template #notok>Session complète!</ng-template>
 <div>{{ session.participants }} Participants</div>
-
-
-
-
-
