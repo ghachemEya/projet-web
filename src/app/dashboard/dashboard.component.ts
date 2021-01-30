@@ -21,52 +21,52 @@ export class DashboardComponent implements OnInit {
   tailleFormateurs : any;
   constructor(private formateurItemsService : fakeformateursService, private sessionItemService: FakesessionitemService, private participantItemService: fakeparticipantService) { }
   Tranks : any ;
-  nbresession : number =0;
+  nbresession : any;
   ngOnInit(): void {
     
     this.sessionItems= this.sessionItemService.get();
     this.taille = this.sessionItems.length;
-    console.log(this.sessionItems);
-
-    
+    this.nbresession = [];
+    for (let i =0; i < 9; i++){
+      this.nbresession.push(0);
+    }  
 
     for (let i = 0; i < this.taille; i++) {
-      this.nbresession = 0;
       switch(this.sessionItems[i].track) { 
       case "MEAN": { 
-        this.nbresession = this.nbresession+1;
+        this.nbresession[0] ++;
          break; 
       } 
       case "Ionic": { 
-        this.nbresession = this.nbresession+1;
+        this.nbresession[1] ++;
          break; 
       } 
       case "NodeJS": { 
-        this.nbresession = this.nbresession+1;
+        this.nbresession[2] ++;
          break; 
       } 
       case "Angular": { 
-        this.nbresession = this.nbresession+1;
+        this.nbresession[3] ++;
          break; 
       } 
       case "Swift": { 
-        this.nbresession = this.nbresession+1;
+        this.nbresession[4] ++;
          break; 
       } 
       case "Symphony": { 
-        this.nbresession = this.nbresession+1;
+        this.nbresession[5] ++;
          break; 
       } 
       case "Laravel": { 
-        this.nbresession = this.nbresession+1;
+        this.nbresession[6] ++;
          break; 
       } 
       case "Android": { 
-        this.nbresession = this.nbresession+1;
+        this.nbresession[7] ++;
          break; 
       } 
       case "Xamarin": { 
-        this.nbresession = this.nbresession+1;
+        this.nbresession[8] ++;
          break; 
       }
       default: { 
